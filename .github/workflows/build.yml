@@ -22,11 +22,3 @@ jobs:
         run: mvn -B deploy
         env:
           GITHUB_TOKEN: ${{ github.token }}
-
-#      - name: Deploy to Amazon ECS
-#        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
-#        with:
-#          task-definition: task-definition.json
-#          service: sample-app-service
-#          cluster: monopolyCluster
-#          wait-for-service-stability: true
