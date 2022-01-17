@@ -15,8 +15,8 @@ jobs:
           distribution: 'adopt'
           java-version: '11'
 
-#      - name: Build the docker-compose stack
-#        run: docker-compose -f "docker-compose.yml" up -d --build
+      - name: Build the docker-compose stack
+        run: docker-compose -f "docker-compose.yml" up -d --build
 
       - name: build with maven
         run: mvn -B deploy
