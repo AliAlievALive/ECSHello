@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  ecshello:
+    networks:
+      - ecshello-backend
+    container_name: ecshello
+    image: ecshello
+    build: .
+    ports:
+      - '3001:8080'
+
+networks:
+  ecshello-backend:
+    name: ecshello-backend
